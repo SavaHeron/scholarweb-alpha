@@ -1,2 +1,0 @@
-# scholarweb-alpha
-# scholarweb-alpha
