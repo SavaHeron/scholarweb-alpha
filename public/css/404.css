@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro');
 
 * {
     background-color: white;
@@ -7,6 +7,6 @@
 
 h1 {
     font-size: 5rem;
-    font-family: Roboto+Condensed;
+    font-family: Source+Code+Pro;
     padding-top: 2.5rem;
 }
