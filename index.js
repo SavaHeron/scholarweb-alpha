@@ -24,6 +24,14 @@ app.get('/401', (req, res) => {
   res.render('401');
 });
 
+app.get('/404', (req, res) => {
+  res.render('404');
+});
+
+app.get('/418', (req, res) => {
+  res.render('418');
+});
+
 app.get('/features', (req, res) => {
   res.render('features');
 });
@@ -40,12 +48,16 @@ app.get('/resources/boostrap.min.js', function (req, res) {
     res.sendFile('./public/js/bootstrap.min.js', { root: __dirname });
 });
 
+app.get('/resources/401.css', function (req, res) {
+  res.sendFile('./public/css/401.css', { root: __dirname });
+})
+
 app.get('/resources/404.css', function (req, res) {
     res.sendFile('./public/css/404.css', { root: __dirname });
 })
 
-app.get('/resources/401.css', function (req, res) {
-  res.sendFile('./public/css/401.css', { root: __dirname });
+app.get('/resources/418.css', function (req, res) {
+  res.sendFile('./public/css/418.css', { root: __dirname });
 })
 
 app.get('/resources/features.css', function (req, res) {
