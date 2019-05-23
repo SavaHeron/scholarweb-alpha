@@ -31,3 +31,30 @@ app.get('/resources/index.css', function (req, res) {
 app.listen(PORT, () => {
     console.log("Webserver docked and running on port " + PORT);
 });
+
+app.get('/api/:method/:parameters', function(req, res){
+    var method = req.params.method;
+    var parameters = req.params.parameters;
+  
+    // "/api/exampleMethod/firstName=john&lastName=smith&age=15"
+    var params = parameters.split("&").map(function(key){
+     return key.split("=", 2); 
+    }); //params[0][0];
+  
+    switch(method) {
+      case "getTasks":
+        getTasks();
+        break;
+      default:
+        res.render(404);
+    }
+  
+    function getTasks() {
+      return;
+    }
+  
+  });
+
+  app.get('*', function (req, resp) {
+    resp.redirect('/404');
+});
