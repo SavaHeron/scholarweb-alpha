@@ -20,6 +20,18 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/features', (req, res) => {
+  res.render('features');
+});
+
+app.get('/login', (req, res) => {
+  res.render('login');
+});
+
+app.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
 app.get('/resources/boostrap.min.js', function (req, res) {
     res.sendFile('./public/js/bootstrap.min.js', { root: __dirname });
 });
