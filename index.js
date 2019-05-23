@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/401', (req, res) => {
+  res.render('401');
+});
+
 app.get('/features', (req, res) => {
   res.render('features');
 });
