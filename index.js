@@ -25,7 +25,7 @@ app.get('/resources/boostrap.min.js', function (req, res) {
 });
 
 app.get('/resources/index.css', function (req, res) {
-    res.sendFile('./public/css/index.jss', { root: __dirname });
+    res.sendFile('./public/css/index.css', { root: __dirname });
 })
 
 app.listen(PORT, () => {
