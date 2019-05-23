@@ -24,8 +24,24 @@ app.get('/resources/boostrap.min.js', function (req, res) {
     res.sendFile('./public/js/bootstrap.min.js', { root: __dirname });
 });
 
+app.get('/resources/404.css', function (req, res) {
+    res.sendFile('./public/css/404.css', { root: __dirname });
+})
+
+app.get('/resources/features.css', function (req, res) {
+  res.sendFile('./public/css/features.css', { root: __dirname });
+})
+
 app.get('/resources/index.css', function (req, res) {
-    res.sendFile('./public/css/index.css', { root: __dirname });
+  res.sendFile('./public/css/index.css', { root: __dirname });
+})
+
+app.get('/resources/login.css', function (req, res) {
+  res.sendFile('./public/css/login.css', { root: __dirname });
+})
+
+app.get('/resources/signup.css', function (req, res) {
+  res.sendFile('./public/css/signup.css', { root: __dirname });
 })
 
 app.listen(PORT, () => {

@@ -8,21 +8,28 @@ head
     script(type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
     script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
     script(type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
-body#page-top
-    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
-    .container
-        a.navbar-brand.js-scroll-trigger(href='#page-top') Scholar
-        button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle Navbar')
-        | Menu
-        i.fas.fa-bars
-        #navbarResponsive.collapse.navbar-collapse
-            ul.navbar-nav.ml-auto
-                li.nav-item
-                    a.nav-link.js-scroll-trigger(href='#download') Download
-                li.nav-item
-                    a.nav-link.js-scroll-trigger(href='#features') Features
-                li.nav-item
-                    a.nav-link.js-scroll-trigger(href='#contact') Contact
+body
+nav.navbar.navbar-light.bg-light.navbar-expand-sm
+    a.navbar-brand(href='/ ') Scholar
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar-list-3' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+    #navbar-list-1.collapse.navbar-collapse.justify-content-between
+        ul.navbar-nav
+            li.nav-item.dropdown
+                a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Features
+                .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                    a.dropdown-item(href='/features #f1') f1
+                    a.dropdown-item(href='/features #f2') f2
+                    a.dropdown-item(href='/features #f3') f3
+                    a.dropdown-item(href='/features #f4') f4
+                    a.dropdown-item(href='/features #f5') f5
+    #navbar-list-2.collapse.navbar-collapse
+        ul.navbar-nav
+            li.nav-item
+                a.nav-link(href='/signup') Sign Up
+    #navbar-list-3.collapse.navbar-collapse.justify-content-between
+        ul.navbar-nav
+            li.nav-item
+                a.nav-link(href='/login') Login
 .container 
     .error
         h1
