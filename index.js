@@ -40,6 +40,10 @@ app.get('/resources/404.css', function (req, res) {
     res.sendFile('./public/css/404.css', { root: __dirname });
 })
 
+app.get('/resources/401.css', function (req, res) {
+  res.sendFile('./public/css/401.css', { root: __dirname });
+})
+
 app.get('/resources/features.css', function (req, res) {
   res.sendFile('./public/css/features.css', { root: __dirname });
 })
