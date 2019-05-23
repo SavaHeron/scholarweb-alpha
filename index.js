@@ -56,5 +56,5 @@ app.get('/api/:method/:parameters', function(req, res){
   });
 
   app.get('*', function (req, resp) {
-    resp.redirect('/404');
+    res.render('404');
 });
