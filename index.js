@@ -55,6 +55,6 @@ app.get('/api/:method/:parameters', function(req, res){
   
   });
 
-  app.get('*', function (req, resp) {
+  app.get('*', (req, res) => {
     res.render('404');
 });
